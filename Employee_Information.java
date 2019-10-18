@@ -1,4 +1,14 @@
 import java.util.Scanner;
+
+class Designation{
+	String designation_code;
+	String designation;
+	int da;
+	void input(String designation_code,String designation,int da){
+	this.designation_code=designation_code;
+	this.designation=designation;
+	this.da=da;
+}
 class Project1 extends Designation {
 	int emp_no;
 	String emp_name;
@@ -8,7 +18,7 @@ class Project1 extends Designation {
 	int basic;
 	int hra;
 	int it;
-
+}
 public void input(int emp_no,String emp_name,String join_date, String designation_code, String department,int basic,int hra,int it ){
 	this.emp_no=emp_no;
 	this.emp_name=emp_name;
@@ -29,16 +39,7 @@ public int calculate_salary(int da){
 
 
 }
-class Designation{
-	String designation_code;
-	String designation;
-	int da;
-	void input(String designation_code,String designation,int da){
-	this.designation_code=designation_code;
-	this.designation=designation;
-	this.da=da;
-}
-}
+
 class EmployeeSearch{
 	public static void main(String[] args){
 	Project1[] studentArray = new Project1[5];
